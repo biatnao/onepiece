@@ -1,0 +1,97 @@
+实体
+
+comic							漫画
+id
+name				
+status
+
+camp							阵营
+id
+name
+comic_id_FK
+
+ability						能力
+id
+name
+info
+impress
+ability_type_id_FK
+comic_id_FK
+
+ability_type					能力类型
+id
+name
+comic_id_FK
+
+
+tag								标签
+id
+name
+impress
+comic_id_FK
+
+
+persona                     人物志
+id 
+name						索引
+introduce
+order
+status
+comic_id_FK				索引
+camp_id_FK				
+face 						默认形象
+face_sm					默认形象小图
+
+
+biographies                 传记
+id
+title
+content
+order
+persona_id_FK
+
+
+
+fetter                      羁绊
+id
+name
+impress
+comic_id_FK
+
+
+album                       相册
+id
+name
+comic_id_FK
+
+
+category                    文章栏目
+article                     文章
+
+article_contents            文章详情
+file                        文件
+
+
+
+
+
+
+album_file_map              相册文件关联
+persona_trick_map           人物招式关联
+persona_biographies_map     人物传记关联
+persona_fetter_map          人物羁绊关联
+persona_tag_map 				人物标签关联（多对多）
+persona_ability_map			人物能力关联
+persona_camp_map				人物阵营关联
+
+
+
+系统相关
+user                        用户
+weixin                      微信
+user_wx_map                 用户微信关联
+admin                       后台管理
+nav                         后台菜单
+
+
+
